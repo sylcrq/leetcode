@@ -56,6 +56,7 @@ SRC_FILES = path_sum.cpp \
 			merge_sorted_array.cpp \
 			unique_paths.cpp \
 			convert_sorted_array_to_binary_search_tree.cpp \
+			swap_nodes_in_pairs.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -102,6 +103,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_sorted_array_test.cpp \
 				 $(TESTCASE_DIR)/unique_paths_test.cpp \
 				 $(TESTCASE_DIR)/convert_sorted_array_to_binary_search_tree_test.cpp \
+				 $(TESTCASE_DIR)/swap_nodes_in_pairs_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
