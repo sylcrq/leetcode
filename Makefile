@@ -59,6 +59,7 @@ SRC_FILES = path_sum.cpp \
 			swap_nodes_in_pairs.cpp \
 			symmetric_tree.cpp \
 			pascals_triangle.cpp \
+			remove_duplicates_from_sorted_list.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -108,6 +109,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/swap_nodes_in_pairs_test.cpp \
 				 $(TESTCASE_DIR)/symmetric_tree_test.cpp \
 				 $(TESTCASE_DIR)/pascals_triangle_test.cpp \
+				 $(TESTCASE_DIR)/remove_duplicates_from_sorted_list_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
