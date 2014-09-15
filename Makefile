@@ -63,6 +63,7 @@ SRC_FILES = path_sum.cpp \
 			generate_parentheses.cpp \
 			binary_tree_level_order_traversal.cpp \
 			binary_tree_level_order_traversal_ii.cpp \
+			permutations.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -116,6 +117,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/generate_parentheses_test.cpp \
 				 $(TESTCASE_DIR)/binary_tree_level_order_traversal_test.cpp \
 				 $(TESTCASE_DIR)/binary_tree_level_order_traversal_ii_test.cpp \
+				 $(TESTCASE_DIR)/permutations_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
