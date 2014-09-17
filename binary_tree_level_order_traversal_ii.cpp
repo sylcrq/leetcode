@@ -16,10 +16,12 @@ using namespace std;
  */
 
 vector<vector<int> > levelOrder(TreeNode *root);
+vector<vector<int> > levelOrder_ii(TreeNode* root);
 
 vector<vector<int> > levelOrderBottom(TreeNode *root)
 {
-    vector<vector<int> > result = levelOrder(root);
+    //vector<vector<int> > result = levelOrder(root);
+    vector<vector<int> > result = levelOrder_ii(root);
 
     if(!result.empty())
         reverse(result.begin(), result.end());

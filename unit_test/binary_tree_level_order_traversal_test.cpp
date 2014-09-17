@@ -7,6 +7,7 @@
 using namespace std;
 
 vector<vector<int> > levelOrder(TreeNode *root);
+vector<vector<int> > levelOrder_ii(TreeNode* root);
 
 TEST(BinaryTreeLevelOrderTraversalTestCase, Normal)
 {
@@ -22,7 +23,8 @@ TEST(BinaryTreeLevelOrderTraversalTestCase, Normal)
     TreeNode* root = generate_binary_tree(tree);;
     binary_tree_print(root);
 
-    vector<vector<int> > result = levelOrder(root);
+    //vector<vector<int> > result = levelOrder(root);
+    vector<vector<int> > result = levelOrder_ii(root);
 
     cout << "level order:" << endl;
 
