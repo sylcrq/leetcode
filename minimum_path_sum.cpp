@@ -4,6 +4,8 @@
 
 using namespace std;
 
+// 二维DP
+// Grid[i][j] = Min(Grid[i-1][j], Grid[i][j-1]) + Grid[i][j]
 int minPathSum(vector<vector<int> > &grid)
 {
     if(grid.empty())
@@ -12,7 +14,7 @@ int minPathSum(vector<vector<int> > &grid)
     int m = grid.size();
     int n = grid[0].size();
 
-    // Path Num Info
+    // Path Sum Info
     vector<vector<int> > info(m, vector<int>(n, 0));
 
     info[0][0] = grid[0][0];

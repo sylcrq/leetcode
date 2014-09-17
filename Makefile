@@ -66,6 +66,7 @@ SRC_FILES = path_sum.cpp \
 			permutations.cpp \
 			container_with_most_water.cpp \
 			minimum_path_sum.cpp \
+			search_a_2d_matrix.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -122,6 +123,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/permutations_test.cpp \
 				 $(TESTCASE_DIR)/container_with_most_water_test.cpp \
 				 $(TESTCASE_DIR)/minimum_path_sum_test.cpp \
+				 $(TESTCASE_DIR)/search_a_2d_matrix_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
