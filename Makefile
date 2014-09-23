@@ -70,6 +70,7 @@ SRC_FILES = path_sum.cpp \
 			linked_list_cycle_ii.cpp \
 			set_matrix_zeroes.cpp \
 			combinations.cpp \
+			remove_duplicates_from_sorted_array_ii.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -130,6 +131,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/linked_list_cycle_ii_test.cpp \
 				 $(TESTCASE_DIR)/set_matrix_zeroes_test.cpp \
 				 $(TESTCASE_DIR)/combinations_test.cpp \
+				 $(TESTCASE_DIR)/remove_duplicates_from_sorted_array_ii_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
