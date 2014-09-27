@@ -74,6 +74,7 @@ SRC_FILES = path_sum.cpp \
 			pascals_triangle_ii.cpp \
 			populating_next_right_pointers_in_each_node_ii.cpp \
 			spiral_matrix_ii.cpp \
+			spiral_matrix.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -138,6 +139,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/pascals_triangle_ii_test.cpp \
 				 $(TESTCASE_DIR)/populating_next_right_pointers_in_each_node_ii_test.cpp \
 				 $(TESTCASE_DIR)/spiral_matrix_ii_test.cpp \
+				 $(TESTCASE_DIR)/spiral_matrix_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
