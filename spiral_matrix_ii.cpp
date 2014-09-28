@@ -16,6 +16,18 @@ vector<vector<int> > generateMatrix(int n)
 
     while(1)
     {
+        // 递归的思想
+        if(count <= 0) break;
+
+        if(count == 1)
+        {
+            for(int i=horizontal_first; i < n-horizontal_first; i++)
+            {
+                result[horizontal_first][i] = num++;
+            }
+            break;
+        }
+
         // 1. 水平向右行
         for(int i=horizontal_first; i < n-horizontal_first; i++)
         {
@@ -24,7 +36,7 @@ vector<vector<int> > generateMatrix(int n)
         horizontal_first++;
         count--;
 
-        if(count <= 0) break;
+        //if(count <= 0) break;
         
         // 2. 垂直向下行
         for(int i=n-vertical_right; i < vertical_right+1; i++)
@@ -41,7 +53,7 @@ vector<vector<int> > generateMatrix(int n)
         horizontal_last--;
         count--;
 
-        if(count <= 0) break;
+        //if(count <= 0) break;
 
         // 4. 垂直向上行
         for(int i=(n-2)-vertical_left; i >= vertical_left+1; i--)
