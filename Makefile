@@ -78,6 +78,7 @@ SRC_FILES = path_sum.cpp \
 			search_in_rotated_sorted_array.cpp \
 			search_in_rotated_sorted_array_ii.cpp \
 			remove_nth_node_from_end_of_list.cpp \
+			sum_root_to_leaf_numbers.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -146,6 +147,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/search_in_rotated_sorted_array_test.cpp \
 				 $(TESTCASE_DIR)/search_in_rotated_sorted_array_ii_test.cpp \
 				 $(TESTCASE_DIR)/remove_nth_node_from_end_of_list_test.cpp \
+				 $(TESTCASE_DIR)/sum_root_to_leaf_numbers_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
