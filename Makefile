@@ -80,6 +80,7 @@ SRC_FILES = path_sum.cpp \
 			remove_nth_node_from_end_of_list.cpp \
 			sum_root_to_leaf_numbers.cpp \
 			minimum_depth_of_binary_tree.cpp \
+			length_of_last_word.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -150,6 +151,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/remove_nth_node_from_end_of_list_test.cpp \
 				 $(TESTCASE_DIR)/sum_root_to_leaf_numbers_test.cpp \
 				 $(TESTCASE_DIR)/minimum_depth_of_binary_tree_test.cpp \
+				 $(TESTCASE_DIR)/length_of_last_word_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
