@@ -83,6 +83,7 @@ SRC_FILES = path_sum.cpp \
 			length_of_last_word.cpp \
 			trapping_rain_water.cpp \
 			palindrome_number.cpp \
+			valid_parentheses.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -156,6 +157,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/length_of_last_word_test.cpp \
 				 $(TESTCASE_DIR)/trapping_rain_water_test.cpp \
 				 $(TESTCASE_DIR)/palindrome_number_test.cpp \
+				 $(TESTCASE_DIR)/valid_parentheses_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
