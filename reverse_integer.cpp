@@ -1,3 +1,4 @@
+#include <stdlib.h>
 
 int reverse(int x)
 {
@@ -32,3 +33,27 @@ int reverse(int x)
 
     return result;
 }
+
+// re-design to handle the overflow situation
+int reverse_ii(int x)
+{
+    int result = 0;
+    bool negative = (x < 0);
+
+    x = abs(x);
+
+    while(x > 0)
+    {
+        result = (result * 10) + (x % 10);
+        x = x / 10;
+    }
+
+    // overflow
+    if(result < 0) return -1;
+
+    if(negative)
+        result *= -1;
+
+    return result;
+}
+
