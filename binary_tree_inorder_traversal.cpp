@@ -43,3 +43,32 @@ vector<int> inorderTraversal(TreeNode *root)
 
     return result;
 }
+
+// 一种更巧妙的解法
+vector<int> inorderTraversal_ii(TreeNode *root)
+{
+    vector<int> result;
+    stack<TreeNode*> my_stack;
+
+    if(!root) return result;
+
+    TreeNode* node = root;
+
+    while(node != NULL || !my_stack.empty())
+    {
+        while(node != NULL)
+        {
+            my_stack.push(node);
+            node = node->left;
+        }
+
+        node = my_stack.top();
+        my_stack.pop();
+
+        result.push_back(node->val);
+        node = node->right;
+    }
+
+    return result;
+}
+
