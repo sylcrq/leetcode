@@ -88,6 +88,7 @@ SRC_FILES = path_sum.cpp \
 			longest_consecutive_sequence.cpp \
 			subsets.cpp \
 			unique_paths_ii.cpp \
+			unique_binary_search_trees_ii.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -166,6 +167,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/longest_consecutive_sequence_test.cpp \
 				 $(TESTCASE_DIR)/subsets_test.cpp \
 				 $(TESTCASE_DIR)/unique_paths_ii_test.cpp \
+				 $(TESTCASE_DIR)/unique_binary_search_trees_ii_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
