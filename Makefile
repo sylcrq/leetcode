@@ -91,6 +91,7 @@ SRC_FILES = path_sum.cpp \
 			unique_binary_search_trees_ii.cpp \
 			search_for_a_range.cpp \
 			valid_sudoku.cpp \
+			convert_sorted_list_to_binary_search_tree.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -172,6 +173,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/unique_binary_search_trees_ii_test.cpp \
 				 $(TESTCASE_DIR)/search_for_a_range_test.cpp \
 				 $(TESTCASE_DIR)/valid_sudoku_test.cpp \
+				 $(TESTCASE_DIR)/convert_sorted_list_to_binary_search_tree_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
