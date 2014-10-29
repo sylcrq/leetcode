@@ -95,6 +95,7 @@ SRC_FILES = path_sum.cpp \
 			longest_common_prefix.cpp \
 			count_and_say.cpp \
 			path_sum_ii.cpp \
+			subsets_ii.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -180,6 +181,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/longest_common_prefix_test.cpp \
 				 $(TESTCASE_DIR)/count_and_say_test.cpp \
 				 $(TESTCASE_DIR)/path_sum_ii_test.cpp \
+				 $(TESTCASE_DIR)/subsets_ii_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
