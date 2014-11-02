@@ -98,6 +98,7 @@ SRC_FILES = path_sum.cpp \
 			subsets_ii.cpp \
 			partition_list.cpp \
 			3sum.cpp \
+			3sum_closest.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -186,6 +187,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/subsets_ii_test.cpp \
 				 $(TESTCASE_DIR)/partition_list_test.cpp \
 				 $(TESTCASE_DIR)/3sum_test.cpp \
+				 $(TESTCASE_DIR)/3sum_closest_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
