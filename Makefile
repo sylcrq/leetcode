@@ -106,6 +106,7 @@ SRC_FILES = path_sum.cpp \
 			letter_combinations_of_a_phone_number.cpp \
 			gas_station.cpp \
 			construct_binary_tree_from_preorder_and_inorder_traversal.cpp \
+			reverse_linked_list_ii.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -202,6 +203,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/letter_combinations_of_a_phone_number_test.cpp \
 				 $(TESTCASE_DIR)/gas_station_test.cpp \
 				 $(TESTCASE_DIR)/construct_binary_tree_from_preorder_and_inorder_traversal_test.cpp \
+				 $(TESTCASE_DIR)/reverse_linked_list_ii_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
