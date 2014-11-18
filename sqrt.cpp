@@ -2,7 +2,7 @@
 
 int sqrt(int x) 
 {
-    // invalid
+    // invalid input
     if(x < 0) 
         return -1;
 
@@ -18,7 +18,7 @@ int sqrt(int x)
     {
         mid = (start+end) / 2;
 
-        // overflow
+        // prevent overflow
         if(mid > (INT_MAX / mid))
         {
             end = mid - 1;
@@ -41,21 +41,7 @@ int sqrt(int x)
         }
     }
 
-
-    return (start+end)/2;
-    //if(mid*mid < 0)
-    //    return mid-1;
-    //if((mid+1)*(mid+1) < 0)
-    //    return mid;
-
-    //if(mid*mid > x && (mid-1)*(mid-1) < x)
-    //    return mid-1;
-
-    //if(mid*mid < x && (mid+1)*(mid+1) < 0)
-    //    return mid;
-
-    //if(mid*mid < x && (mid+1)*(mid+1) > x)
-    //    return mid;
+    return (start+end) / 2;  // ?
 }
 
 
