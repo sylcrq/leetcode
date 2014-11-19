@@ -2,6 +2,21 @@
 
 using namespace std;
 
+LRUCache::LRUCache(int capacity) : 
+    head_(NULL),
+    tail_(NULL),
+    capacity_(capacity), 
+    size_(0)
+{
+}
+
+LRUCache::~LRUCache()
+{
+    // free list
+    while(head_)
+        list_pop_back();
+}
+
 int LRUCache::get(int key)
 {
     map<int, ListNode*>::iterator it = kv_map_.find(key);
@@ -24,12 +39,19 @@ void LRUCache::set(int key, int value)
         if(size_ == capacity_)
         {
             // delete from list & hash map
-            kv_map_.erase(tail_->key);
-            list_pop_back();
-
+            //kv_map_.erase(tail_->key);
+            //list_pop_back();
             // insert into list & hash map
-            ListNode* node = list_push_front(key, value);
-            kv_map_.insert( pair<int, ListNode*>(key, node) );
+            //ListNode* node = list_push_front(key, value);
+            //kv_map_.insert( pair<int, ListNode*>(key, node) );
+
+            // update hash map
+            kv_map_.erase(tail_->key);
+            kv_map_.insert( pair<int, ListNode*>(key, tail_) );
+            // move tail to head
+            tail_->key = key;
+            tail_->value = value;
+            list_move_front(tail_);
         }
         else
         {

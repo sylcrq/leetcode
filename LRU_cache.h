@@ -7,17 +7,8 @@
 class LRUCache
 {
 public:
-    LRUCache(int capacity) : 
-        head_(NULL),
-        tail_(NULL),
-        capacity_(capacity), 
-        size_(0)
-    {}
-
-    ~LRUCache()
-    {
-        // TODO: free list
-    }
+    LRUCache(int capacity);
+    ~LRUCache();
 
     int get(int key); 
     void set(int key, int value); 
