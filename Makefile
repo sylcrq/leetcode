@@ -110,6 +110,7 @@ SRC_FILES = path_sum.cpp \
 			edit_distance.cpp \
 			sqrt.cpp \
 			LRU_cache.cpp \
+			string_to_integer.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -210,6 +211,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/edit_distance_test.cpp \
 				 $(TESTCASE_DIR)/sqrt_test.cpp \
 				 $(TESTCASE_DIR)/LRU_cache_test.cpp \
+				 $(TESTCASE_DIR)/string_to_integer_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
