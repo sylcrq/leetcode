@@ -118,6 +118,7 @@ SRC_FILES = path_sum.cpp \
 			insertion_sort_list.cpp \
 			remove_duplicates_from_sorted_list_ii.cpp \
 			permutations_ii.cpp \
+			distinct_subsequences.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -226,6 +227,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/insertion_sort_list_test.cpp \
 				 $(TESTCASE_DIR)/remove_duplicates_from_sorted_list_ii_test.cpp \
 				 $(TESTCASE_DIR)/permutations_ii_test.cpp \
+				 $(TESTCASE_DIR)/distinct_subsequences_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
