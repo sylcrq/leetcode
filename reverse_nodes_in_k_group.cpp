@@ -10,6 +10,61 @@
  */
 ListNode* reverse_linked_list(ListNode* head, ListNode* tail);
 
+// 一种更优的解法, O(N)
+ListNode* reverseKGroup_ii(ListNode* head, int k)
+{
+    if(!head || k <= 1)
+        return head;
+
+    ListNode* start = head;
+    ListNode* prev = start;
+
+    while(start != NULL)
+    {
+        ListNode* node = start;
+
+        int count = k;
+
+        while(count > 1 && node->next != NULL)
+        {
+            // DO Reverse
+            ListNode* tmp = node->next;
+
+            node->next = node->next->next;
+            tmp->next = start;
+            start = tmp;
+
+            count--;
+        }
+
+        // 链表最后不足K的节点需要再reverse回来
+        if(count > 1)
+        {
+            while(start != node)
+            {
+                ListNode* tmp = start->next;
+
+                start->next = node->next;
+                node->next = start;
+                start = tmp;
+            }
+
+            break;
+        }
+
+        if(node == head)
+            head = start;
+        else
+            prev->next = start;
+
+        // update "prev" & "start"
+        prev = node;
+        start = node->next;
+    }
+
+    return head;
+}
+
 // 时间复杂度 O(k*N)
 ListNode *reverseKGroup(ListNode *head, int k) 
 {
@@ -32,6 +87,7 @@ ListNode *reverseKGroup(ListNode *head, int k)
         if(count > 0)
             break;
 
+        // 对长度为K的链表进行reverse
         ListNode* node = reverse_linked_list(start, end);
         if(start == head)
         {
@@ -42,7 +98,7 @@ ListNode *reverseKGroup(ListNode *head, int k)
             prev->next = node;
         }
 
-        //update "prev" & "start" & "end"
+        // update "prev" & "start" & "end"
         prev = start;
         start = end;
         end = start;

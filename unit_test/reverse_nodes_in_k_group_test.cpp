@@ -1,6 +1,7 @@
 #include "gtest/gtest.h"
 #include "singly_linked_list.h"
 
+ListNode* reverseKGroup_ii(ListNode* head, int k);
 ListNode *reverseKGroup(ListNode *head, int k);
 ListNode* reverse_linked_list(ListNode* head, ListNode* tail);
 
@@ -43,7 +44,7 @@ TEST(ReverseNodesInKGroupTestCase, Normal)
 
     singly_linked_list_traverse(head);
 
-    head = reverseKGroup(head, 3);
+    head = reverseKGroup_ii(head, 2);
 
     singly_linked_list_traverse(head);
 }
