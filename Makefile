@@ -123,6 +123,7 @@ SRC_FILES = path_sum.cpp \
 			anagrams.cpp \
 			validate_binary_search_tree.cpp \
 			recover_binary_search_tree.cpp \
+			combination_sum_ii.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -236,6 +237,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/anagrams_test.cpp \
 				 $(TESTCASE_DIR)/validate_binary_search_tree_test.cpp \
 				 $(TESTCASE_DIR)/recover_binary_search_tree_test.cpp \
+				 $(TESTCASE_DIR)/combination_sum_ii_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
