@@ -124,6 +124,8 @@ SRC_FILES = path_sum.cpp \
 			validate_binary_search_tree.cpp \
 			recover_binary_search_tree.cpp \
 			combination_sum_ii.cpp \
+			$(ADT_DIR)/random_linked_list.cpp \
+			copy_list_with_random_pointer.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -238,6 +240,8 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/validate_binary_search_tree_test.cpp \
 				 $(TESTCASE_DIR)/recover_binary_search_tree_test.cpp \
 				 $(TESTCASE_DIR)/combination_sum_ii_test.cpp \
+				 $(ADT_DIR)/random_linked_list_test.cpp \
+				 $(TESTCASE_DIR)/copy_list_with_random_pointer_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
