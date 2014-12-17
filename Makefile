@@ -127,6 +127,7 @@ SRC_FILES = path_sum.cpp \
 			$(ADT_DIR)/random_linked_list.cpp \
 			copy_list_with_random_pointer.cpp \
 			zigzag_conversion.cpp \
+			$(OTHER_DIR)/counting_sort.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -244,6 +245,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(ADT_DIR)/random_linked_list_test.cpp \
 				 $(TESTCASE_DIR)/copy_list_with_random_pointer_test.cpp \
 				 $(TESTCASE_DIR)/zigzag_conversion_test.cpp \
+				 $(OTHER_DIR)/counting_sort_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
