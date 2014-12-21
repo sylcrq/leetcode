@@ -129,6 +129,8 @@ SRC_FILES = path_sum.cpp \
 			zigzag_conversion.cpp \
 			$(OTHER_DIR)/counting_sort.cpp \
 			first_missing_positive.cpp \
+			$(ADT_DIR)/undirected_graph.cpp \
+			clone_graph.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -248,6 +250,8 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/zigzag_conversion_test.cpp \
 				 $(OTHER_DIR)/counting_sort_test.cpp \
 				 $(TESTCASE_DIR)/first_missing_positive_test.cpp \
+				 $(ADT_DIR)/undirected_graph_test.cpp \
+				 $(TESTCASE_DIR)/clone_graph_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
