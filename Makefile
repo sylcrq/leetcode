@@ -128,6 +128,7 @@ SRC_FILES = path_sum.cpp \
 			copy_list_with_random_pointer.cpp \
 			zigzag_conversion.cpp \
 			$(OTHER_DIR)/counting_sort.cpp \
+			$(OTHER_DIR)/bucket_sort.cpp \
 			first_missing_positive.cpp \
 			$(ADT_DIR)/undirected_graph.cpp \
 			clone_graph.cpp \
@@ -249,6 +250,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/copy_list_with_random_pointer_test.cpp \
 				 $(TESTCASE_DIR)/zigzag_conversion_test.cpp \
 				 $(OTHER_DIR)/counting_sort_test.cpp \
+				 $(OTHER_DIR)/bucket_sort_test.cpp \
 				 $(TESTCASE_DIR)/first_missing_positive_test.cpp \
 				 $(ADT_DIR)/undirected_graph_test.cpp \
 				 $(TESTCASE_DIR)/clone_graph_test.cpp \

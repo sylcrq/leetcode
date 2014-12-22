@@ -19,7 +19,8 @@ UndirectedGraphNode* init_undirected_graph(vector<vector<int> >& nodes)
         if(!(nodes[i].empty()))
         {
             UndirectedGraphNode* node = new UndirectedGraphNode(nodes[i][0]);
-            hash_map.insert( std::pair<int, UndirectedGraphNode*>(nodes[i][0], node) );
+            //hash_map.insert( std::pair<int, UndirectedGraphNode*>(nodes[i][0], node) );
+            hash_map[nodes[i][0]] = node;
 
             if(graph == NULL)
                 graph = node;
@@ -50,28 +51,33 @@ void print_undirected_graph(UndirectedGraphNode* node)
 
     queue<UndirectedGraphNode*> my_queue;
     map<int, UndirectedGraphNode*> hash_map;
+
     my_queue.push(node);
-    hash_map.insert( std::pair<int, UndirectedGraphNode*>(node->label, node) );
+    //hash_map.insert( std::pair<int, UndirectedGraphNode*>(node->label, node) );
+    hash_map[node->label] = node;
 
     while(!my_queue.empty())
     {
         UndirectedGraphNode* tmp = my_queue.front();
         my_queue.pop();
 
-        std::cout << tmp->label << "[";
+        std::cout << tmp->label << "(" << tmp << ") {";
 
         for(size_t i=0; i<(tmp->neighbors).size(); i++)
         {
-            std::cout << ((tmp->neighbors)[i])->label << ",";
+            UndirectedGraphNode* ptr = (tmp->neighbors)[i];
 
-            if(hash_map.find(((tmp->neighbors)[i])->label) == hash_map.end())
+            std::cout << ptr->label << "(" << ptr << "), ";
+
+            if(hash_map.find(ptr->label) == hash_map.end())
             {
-                my_queue.push((tmp->neighbors)[i]);
-                hash_map.insert( std::pair<int, UndirectedGraphNode*>(((tmp->neighbors)[i])->label, (tmp->neighbors)[i]) );
+                my_queue.push(ptr);
+                //hash_map.insert( std::pair<int, UndirectedGraphNode*>(((tmp->neighbors)[i])->label, (tmp->neighbors)[i]) );
+                hash_map[ptr->label] = ptr;
             }
         }
 
-        std::cout << "]" << std::endl;
+        std::cout << "}" << std::endl;
     }
 }
 

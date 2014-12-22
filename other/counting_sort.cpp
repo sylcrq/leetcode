@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/* 计数排序:
+ * http://zh.wikipedia.org/wiki/计数排序
+ * 时间复杂度: O(N+K)
+ * 空间复杂度: O(N+K)
+ */
+
 // 对范围在[0, 100)的数组进行Counting Sort
 vector<int> counting_sort(vector<int>& array)
 {
