@@ -4,6 +4,7 @@
 using namespace std;
 
 RandomListNode *copyRandomList(RandomListNode *head);
+RandomListNode* copyRandomList_ii(RandomListNode* head);
 
 TEST(CopyListWithRandomPointerTestCase, Normal)
 {
@@ -13,6 +14,6 @@ TEST(CopyListWithRandomPointerTestCase, Normal)
     RandomListNode* head = init_random_linked_list(value);
     print_random_linked_list(head);
 
-    RandomListNode* copy = copyRandomList(head);
+    RandomListNode* copy = copyRandomList_ii(head);
     print_random_linked_list(copy);
 }
