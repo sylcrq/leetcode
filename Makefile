@@ -133,6 +133,7 @@ SRC_FILES = path_sum.cpp \
 			$(ADT_DIR)/undirected_graph.cpp \
 			clone_graph.cpp \
 			best_time_to_buy_and_sell_stock_III.cpp \
+			valid_palindrome.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -256,6 +257,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(ADT_DIR)/undirected_graph_test.cpp \
 				 $(TESTCASE_DIR)/clone_graph_test.cpp \
 				 $(TESTCASE_DIR)/best_time_to_buy_and_sell_stock_III_test.cpp \
+				 $(TESTCASE_DIR)/valid_palindrome_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
