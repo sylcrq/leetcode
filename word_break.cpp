@@ -1,6 +1,7 @@
 #include <string>
 #include <unordered_set>
-#include <vector>
+//#include <vector>
+#include <deque>
 
 using namespace std;
 
@@ -12,7 +13,10 @@ bool wordBreak(string s, unordered_set<string> &dict)
 
     int size = s.size();
 
-    vector<bool> visited(size, false);
+    //vector<bool> visited(size, false);
+    // <<Effective STL>>
+    // use deque<bool> or bitset instead of vector<bool>
+    deque<bool> visited(size, false);
 
     for(int i=0; i<size; i++)
     {

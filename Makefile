@@ -135,6 +135,7 @@ SRC_FILES = path_sum.cpp \
 			best_time_to_buy_and_sell_stock_III.cpp \
 			valid_palindrome.cpp \
 			word_break.cpp \
+			sort_list.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -260,6 +261,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/best_time_to_buy_and_sell_stock_III_test.cpp \
 				 $(TESTCASE_DIR)/valid_palindrome_test.cpp \
 				 $(TESTCASE_DIR)/word_break_test.cpp \
+				 $(TESTCASE_DIR)/sort_list_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
