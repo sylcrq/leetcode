@@ -15,8 +15,107 @@ int merge_sort_list_in_place(ListNode* list_1, int size_1,
                              ListNode** head, 
                              ListNode** tail);
 
-// 时间复杂度: O(N*logN)
-// 空间复杂度: O(1)
+/* 要求: 时间复杂度 O(N*logN), 空间复杂度 O(1) */
+
+// 一种更简洁的解法
+ListNode *sortList_ii(ListNode *head)
+{
+    int size = 0;
+
+    ListNode* ptr = head;
+    while(ptr != NULL)
+    {
+        ptr = ptr->next;
+        size++;
+    }
+
+    for(int step=1; step<size; step=step<<1)
+    {
+        ListNode* slow = head;
+        ListNode* fast = head;
+        ListNode* prev = head;
+
+        while(slow != NULL && fast != NULL)
+        {
+            int i = 0;
+            while(i < step && fast != NULL)
+            {
+                fast = fast->next;
+                i++;
+            }
+
+            int slow_size = 0;
+            int fast_size = 0;
+
+            // merge
+            while(slow_size < step && fast_size < step && slow != NULL && fast != NULL)
+            {
+                if(slow->val < fast->val)
+                {
+                    prev = slow;
+                    slow = slow->next;
+                    slow_size++;
+                }
+                else
+                {
+                    ListNode* tmp = fast->next;
+
+                    // if slow == prev == head, update head
+                    if(slow == head && slow == prev)
+                    {
+                        fast->next = slow;
+                        prev = fast;
+                        head = fast;
+                    }
+                    else
+                    {
+                        fast->next = prev->next;
+                        prev->next = fast;
+                        prev = fast;
+                    }
+
+                    fast = tmp;
+                    fast_size++;
+                }
+            }
+
+            while(slow_size < step && slow != NULL)
+            {
+                prev = slow;
+                slow = slow->next;
+                slow_size++;
+            }            
+
+            while(fast_size < step && fast != NULL)
+            {
+                ListNode* tmp = fast->next;
+
+                // if slow == prev == head, update head
+                if(slow == head && slow == prev)
+                {
+                    fast->next = slow;
+                    prev = fast;
+                    head = fast;
+                }
+                else
+                {
+                    fast->next = prev->next;
+                    prev->next = fast;
+                    prev = fast;
+                }
+
+                fast = tmp;
+                fast_size++;
+            }
+
+            prev->next = fast;  // Note!
+            slow = fast;  // update slow
+        }
+    }
+
+    return head;
+}
+
 ListNode *sortList(ListNode *head) 
 {
     if(!head)

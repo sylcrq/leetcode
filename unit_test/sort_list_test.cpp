@@ -3,6 +3,7 @@
 #include <iostream>
 
 ListNode *sortList(ListNode *head); 
+ListNode *sortList_ii(ListNode *head);
 int merge_sort_list_in_place(ListNode* list_1, int size_1, 
                              ListNode* list_2, int size_2, 
                              ListNode** head, 
@@ -57,7 +58,8 @@ TEST(SortListTestCase, Normal)
 
     singly_linked_list_traverse(head);
 
-    head = sortList(head);
+    //head = sortList(head);
+    head = sortList_ii(head);
 
     std::cout << "after sort:" << std::endl;
     singly_linked_list_traverse(head);
