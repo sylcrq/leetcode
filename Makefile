@@ -138,6 +138,7 @@ SRC_FILES = path_sum.cpp \
 			sort_list.cpp \
 			restore_ip_addresses.cpp \
 			scramble_string.cpp \
+			word_ladder.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -266,6 +267,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/sort_list_test.cpp \
 				 $(TESTCASE_DIR)/restore_ip_addresses_test.cpp \
 				 $(TESTCASE_DIR)/scramble_string_test.cpp \
+				 $(TESTCASE_DIR)/word_ladder_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
