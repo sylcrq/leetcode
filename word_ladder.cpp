@@ -23,8 +23,10 @@ int ladderLength(string start, string end, unordered_set<string> &dict)
     deque<string> my_queue;
     my_queue.push_back(start);
 
-    unordered_set<string> visited;
-    visited.insert(start);
+    //unordered_set<string> visited;
+    //visited.insert(start);
+    // 优化
+    dict.erase(start);
 
     while(!my_queue.empty())
     {
@@ -43,13 +45,14 @@ int ladderLength(string start, string end, unordered_set<string> &dict)
                     return (depth+2);
 
                 // 剪枝
-                if(visited.find(tmp) != visited.end())
-                    continue;
+                //if(visited.find(tmp) != visited.end())
+                //    continue;
 
                 if(dict.find(tmp) != dict.end())
                 {
                     my_queue.push_back(tmp);
-                    visited.insert(tmp);
+                    //visited.insert(tmp);
+                    dict.erase(tmp);  // 剪枝
                     next_nodes++;
                 }
             }
