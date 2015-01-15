@@ -7,9 +7,12 @@ string simplifyPath(string path)
 {
     string result;
 
+    if(path.empty())
+        return result;
+
     vector<string> nodes;
     string tmp;
-    for(int i=0; i<path.size(); i++)
+    for(size_t i=0; i<path.size(); i++)
     {
         if(path[i] == '/')
         {
@@ -20,6 +23,7 @@ string simplifyPath(string path)
                 else if(tmp.compare("..") != 0)
                     nodes.push_back(tmp);
             }
+
             tmp.clear();
         }
         else
@@ -37,9 +41,9 @@ string simplifyPath(string path)
     }
 
     if(nodes.empty())
-        result.push_back('/');
+        return string("/");
 
-    for(int i=0; i<nodes.size(); i++)
+    for(size_t i=0; i<nodes.size(); i++)
     {
         result.push_back('/');
         result.append(nodes[i]);
