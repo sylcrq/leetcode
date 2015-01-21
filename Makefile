@@ -141,6 +141,7 @@ SRC_FILES = path_sum.cpp \
 			word_ladder.cpp \
 			simplify_path.cpp \
 			4sum.cpp \
+			divide_two_integers.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -272,6 +273,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/word_ladder_test.cpp \
 				 $(TESTCASE_DIR)/simplify_path_test.cpp \
 				 $(TESTCASE_DIR)/4sum_test.cpp \
+				 $(TESTCASE_DIR)/divide_two_integers_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
