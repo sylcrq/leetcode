@@ -143,6 +143,7 @@ SRC_FILES = path_sum.cpp \
 			4sum.cpp \
 			divide_two_integers.cpp \
 			rotate_list.cpp \
+			word_search.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -276,6 +277,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/4sum_test.cpp \
 				 $(TESTCASE_DIR)/divide_two_integers_test.cpp \
 				 $(TESTCASE_DIR)/rotate_list_test.cpp \
+				 $(TESTCASE_DIR)/word_search_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
