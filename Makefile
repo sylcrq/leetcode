@@ -146,6 +146,7 @@ SRC_FILES = path_sum.cpp \
 			word_search.cpp \
 			surrounded_regions.cpp \
 			decode_ways.cpp \
+			reorder_list.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -282,6 +283,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/word_search_test.cpp \
 				 $(TESTCASE_DIR)/surrounded_regions_test.cpp \
 				 $(TESTCASE_DIR)/decode_ways_test.cpp \
+				 $(TESTCASE_DIR)/reorder_list_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
