@@ -1,6 +1,7 @@
 #include "gtest/gtest.h"
 
 bool isMatch(const char *s, const char *p);
+bool isMatch_ii(const char *s, const char *p);
 
 TEST(RegularExpressionMatching, Normal)
 {
@@ -15,4 +16,17 @@ TEST(RegularExpressionMatching, Normal)
     EXPECT_TRUE( isMatch("a", "ab*") );
     EXPECT_FALSE( isMatch("a", "ab*a") );
     EXPECT_TRUE( isMatch("", "c*c*") );
+
+    // test isMatch_ii()
+    EXPECT_FALSE( isMatch_ii("aa", "a") );
+    EXPECT_TRUE( isMatch_ii("aa", "aa") );
+    EXPECT_FALSE( isMatch_ii("aaa", "aa") );
+    EXPECT_TRUE( isMatch_ii("aa", "a*") );
+    EXPECT_TRUE( isMatch_ii("aa", ".*") );
+    EXPECT_TRUE( isMatch_ii("ab", ".*") );
+    EXPECT_TRUE( isMatch_ii("aab", "c*a*b") );
+
+    EXPECT_TRUE( isMatch_ii("a", "ab*") );
+    EXPECT_FALSE( isMatch_ii("a", "ab*a") );
+    EXPECT_TRUE( isMatch_ii("", "c*c*") );
 }

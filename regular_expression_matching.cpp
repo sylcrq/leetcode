@@ -1,6 +1,33 @@
 #include <assert.h>
 #include <iostream>
 
+// 一种简洁的解法
+// http://leetcode.com/2011/09/regular-expression-matching.html
+bool isMatch_ii(const char *s, const char *p)
+{
+    assert(s && p);
+
+    if(*p == '\0')
+        return (*s == '\0');
+
+    // next is NOT '*'    
+    if(*(p+1) != '*')
+    {
+        return ( (*s == *p || (*p == '.' && *s != '\0')) && isMatch_ii(s+1, p+1) );
+    }
+
+    // next is '*'
+    while(*s == *p || (*p == '.' && *s != '\0'))
+    {
+        if(isMatch_ii(s, p+2))
+            return true;
+
+        s++;
+    }
+
+    return isMatch_ii(s, p+2);
+}
+
 // 递归
 bool isMatch(const char *s, const char *p) 
 {
