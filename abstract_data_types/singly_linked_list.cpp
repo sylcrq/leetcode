@@ -1,6 +1,22 @@
 #include "singly_linked_list.h"
 
+using namespace std;
 
+// 通过传入的vector数组创建链表
+ListNode* create_singly_linked_list(vector<int>& list)
+{
+    ListNode* head = NULL;
+
+    if(list.empty())
+        return head;
+
+    for(vector<int>::iterator it=list.begin(); it != list.end(); it++)
+    {
+        head = singly_linked_list_add(head, *it);
+    }
+
+    return head;
+}
 
 //Add a New ListNode
 //在链表尾部添加一个新节点

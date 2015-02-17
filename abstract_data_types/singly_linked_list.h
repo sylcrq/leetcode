@@ -11,6 +11,7 @@
  */
 
 #include <iostream>
+#include <vector>
 
 struct ListNode
 {
@@ -34,5 +35,7 @@ void singly_linked_list_traverse(ListNode* head);
 
 //Cycle
 void singly_linked_list_cycle(ListNode* head, ListNode* node);
+
+ListNode* create_singly_linked_list(std::vector<int>& list);
 
 #endif

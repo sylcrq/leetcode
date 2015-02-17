@@ -151,6 +151,7 @@ SRC_FILES = path_sum.cpp \
 			evaluate_reverse_polish_notation.cpp \
 			median_of_two_sorted_arrays.cpp \
 			regular_expression_matching.cpp \
+			merge_k_sorted_lists.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -292,6 +293,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/evaluate_reverse_polish_notation_test.cpp \
 				 $(TESTCASE_DIR)/median_of_two_sorted_arrays_test.cpp \
 				 $(TESTCASE_DIR)/regular_expression_matching_test.cpp \
+				 $(TESTCASE_DIR)/merge_k_sorted_lists_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
