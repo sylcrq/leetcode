@@ -155,6 +155,7 @@ SRC_FILES = path_sum.cpp \
 			substring_with_concatenation_of_all_words.cpp \
 			sudoku_solver.cpp \
 			insert_interval.cpp \
+			longest_valid_parentheses.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -300,6 +301,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/substring_with_concatenation_of_all_words_test.cpp \
 				 $(TESTCASE_DIR)/sudoku_solver_test.cpp \
 				 $(TESTCASE_DIR)/insert_interval_test.cpp \
+				 $(TESTCASE_DIR)/longest_valid_parentheses_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
