@@ -1,5 +1,5 @@
-GMOCK_DIR=/home/syl/developer/gmock-1.7.0
-GTEST_DIR=/home/syl/developer/gtest-1.7.0
+GMOCK_DIR=${PWD}/thirdparty/gmock
+GTEST_DIR=${PWD}/thirdparty/gtest
 
 ADT_DIR=./abstract_data_types
 TESTCASE_DIR=./unit_test
