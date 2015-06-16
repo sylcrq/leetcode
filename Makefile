@@ -156,6 +156,7 @@ SRC_FILES = path_sum.cpp \
 			sudoku_solver.cpp \
 			insert_interval.cpp \
 			longest_valid_parentheses.cpp \
+			number_of_1_bits.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -302,6 +303,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/sudoku_solver_test.cpp \
 				 $(TESTCASE_DIR)/insert_interval_test.cpp \
 				 $(TESTCASE_DIR)/longest_valid_parentheses_test.cpp \
+				 $(TESTCASE_DIR)/number_of_1_bits_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
