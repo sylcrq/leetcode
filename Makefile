@@ -157,6 +157,7 @@ SRC_FILES = path_sum.cpp \
 			insert_interval.cpp \
 			longest_valid_parentheses.cpp \
 			number_of_1_bits.cpp \
+			excel_sheet_column_number.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -304,6 +305,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/insert_interval_test.cpp \
 				 $(TESTCASE_DIR)/longest_valid_parentheses_test.cpp \
 				 $(TESTCASE_DIR)/number_of_1_bits_test.cpp \
+				 $(TESTCASE_DIR)/excel_sheet_column_number_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
