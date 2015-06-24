@@ -159,6 +159,7 @@ SRC_FILES = path_sum.cpp \
 			number_of_1_bits.cpp \
 			excel_sheet_column_number.cpp \
 			contains_duplicate.cpp \
+			invert_binary_tree.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -308,6 +309,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/number_of_1_bits_test.cpp \
 				 $(TESTCASE_DIR)/excel_sheet_column_number_test.cpp \
 				 $(TESTCASE_DIR)/contains_duplicate_test.cpp \
+				 $(TESTCASE_DIR)/invert_binary_tree_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
