@@ -3,13 +3,21 @@ leetcode
 
 对[leetcode算法题](https://oj.leetcode.com/problems/)的C++实现
 
-1. **开发环境**
+1. **通过Git Submodule管理依赖的两个子项目gmock和gtest**
+
+  * 项目clone完成后运行下面两行命令
+
+  * git submodule init
+
+  * git submodule update
+
+2. **开发环境**
 
   * Ubuntu 14.04 LTS
 
   * gcc version 4.8.2
 
-2. **目录结构**
+3. **目录结构**
 
   * **abstract_data_types/** 目录下是一些公共数据结构(链表, 二叉树等)的实现
 
