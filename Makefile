@@ -161,6 +161,7 @@ SRC_FILES = path_sum.cpp \
 			contains_duplicate.cpp \
 			invert_binary_tree.cpp \
 			majority_element.cpp \
+			find_minimum_in_rotated_sorted_array.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -312,6 +313,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/contains_duplicate_test.cpp \
 				 $(TESTCASE_DIR)/invert_binary_tree_test.cpp \
 				 $(TESTCASE_DIR)/majority_element_test.cpp \
+				 $(TESTCASE_DIR)/find_minimum_in_rotated_sorted_array_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
