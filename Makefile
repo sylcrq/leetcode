@@ -163,6 +163,7 @@ SRC_FILES = path_sum.cpp \
 			majority_element.cpp \
 			find_minimum_in_rotated_sorted_array.cpp \
 			find_minimum_in_rotated_sorted_array_ii.cpp \
+			reverse_linked_list.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -316,6 +317,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/majority_element_test.cpp \
 				 $(TESTCASE_DIR)/find_minimum_in_rotated_sorted_array_test.cpp \
 				 $(TESTCASE_DIR)/find_minimum_in_rotated_sorted_array_ii_test.cpp \
+				 $(TESTCASE_DIR)/reverse_linked_list_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
