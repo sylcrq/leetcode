@@ -322,6 +322,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/reverse_linked_list_test.cpp \
 				 $(TESTCASE_DIR)/happy_number_test.cpp \
 				 $(TESTCASE_DIR)/find_peak_element_test.cpp \
+				 $(TESTCASE_DIR)/implement_stack_using_queues_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
