@@ -167,6 +167,7 @@ SRC_FILES = path_sum.cpp \
 			happy_number.cpp \
 			find_peak_element.cpp \
 			house_robber.cpp \
+			factorial_trailing_zeroes.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
@@ -326,6 +327,7 @@ SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/implement_stack_using_queues_test.cpp \
 				 $(TESTCASE_DIR)/binary_search_tree_iterator_test.cpp \
 				 $(TESTCASE_DIR)/house_robber_test.cpp \
+				 $(TESTCASE_DIR)/factorial_trailing_zeroes_test.cpp \
 
 OBJ_FILES = $(patsubst %.cpp,%.o,$(SRC_FILES) )
 OBJ_TEST_FILES = $(patsubst %.cpp,%.o,$(SRC_TEST_FILES) )
