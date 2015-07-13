@@ -168,6 +168,7 @@ SRC_FILES = path_sum.cpp \
 			find_peak_element.cpp \
 			house_robber.cpp \
 			factorial_trailing_zeroes.cpp \
+			intersection_of_two_linked_lists.cpp \
 
 SRC_TEST_FILES = $(TESTCASE_DIR)/multiply_strings_test.cpp \
 				 $(TESTCASE_DIR)/merge_two_sorted_lists_test.cpp \
